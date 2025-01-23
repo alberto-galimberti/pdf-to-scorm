@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "PDF Viewer Extension",
+    "version": "1.0",
+    "description": "A Chrome extension to render PDF files using PDF.js",
+    "permissions": ["storage"],
+    "host_permissions": ["*://*/*"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "node_modules/jszip/dist/jszip.min.js",
+          "node_modules/pdfjs-dist/build/pdf.mjs",
+          "node_modules/pdfjs-dist/web/pdf_viewer.mjs",
+          "node_modules/pdfjs-dist/web/pdf_viewer.css",
+          "node_modules/pdfjs-dist/build/pdf.worker.mjs",
+          "renderer.html",
+          "renderer.js",
+          "style.css"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
