@@ -37,7 +37,6 @@ This project is a Chrome extension and SCORM package generator that allows users
 - `popup.js`: JavaScript for handling PDF uploads, rendering, and SCORM tracking.
 - `renderer.js`: JavaScript file for PDF rendering and navigation logic.
 - `viewer.css`: Optional styling for the PDF viewer.
-- `libs/`: Contains external dependencies such as `pdf.mjs` and `pdf.worker.mjs`.
 
 ## Dependencies
 
@@ -75,10 +74,9 @@ Contributions are welcome! To contribute:
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the GNU-GPL 3 License. See the LICENSE file for details.
 
 ## Acknowledgments
 
 - Mozilla PDF.js Team
 - JSZip Contributors
-
